@@ -1,7 +1,7 @@
 <?php
 include 'config/db.php';
 
-// Obtener los cambios más recientes (por ejemplo, los últimos 10 cambios en productos y proveedores)
+// Obtener los cambios más recientes
 $sql = "SELECT * FROM cambios 
         WHERE tabla IN ('productos', 'proveedores') 
         ORDER BY fecha DESC 
